@@ -10,7 +10,6 @@ Source0:	http://redfoot.net/2003/01/06/%{name}-%{version}.tgz
 # Source0-md5:	4c707fdfd0977be9518a8932a7be86a2
 URL:		http://redfoot.net/
 BuildRequires:	python-devel >= 1:2.3
-BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-modules
 Requires:	python-medusa
 Requires:	python-rdflib = 1.2.4
