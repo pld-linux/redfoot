@@ -1,16 +1,10 @@
-
-%include /usr/lib/rpm/macros.python
-
-%define py_ver         2.3
-%define py_prefix      %{_prefix}
-%define py_scriptdir   %{py_prefix}/share/python%{py_ver}
-%define py_sitescriptdir %{py_scriptdir}/site-packages
-
-Summary:	Redfoot is a program for managing and sharing information
+%include	/usr/lib/rpm/macros.python
+Summary:	Redfoot - a program for managing and sharing information
+Summary(pl):	Redfoot - program do zarz±dzania i dzielenia informacji
 Name:		redfoot
 Version:	1.8.0
 Release:	1
-License:	UNKNOWN
+License:	BSD
 Vendor:		Robin Dunn <robin@alldunn.com>
 Group:		Development/Languages/Python
 Source0:	http://redfoot.net/2003/01/06/%{name}-%{version}.tgz
@@ -19,19 +13,33 @@ URL:		http://redfoot.net/
 BuildRequires:	python-devel >= 2.3
 BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-modules
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-Requires:	python-rdflib = 1.2.4
 Requires:	python-medusa
-%description
-edfoot is a program for managing and sharing information. Redfoot 
-is currently geared mostly to the developer, but is shifting in 
-the direction of the end user.
+Requires:	python-rdflib = 1.2.4
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-Redfoot makes extensive use of RDF and is written in Python. Redfoot's 
+%description
+Redfoot is a program for managing and sharing information. Redfoot is
+currently geared mostly to the developer, but is shifting in the
+direction of the end user.
+
+Redfoot makes extensive use of RDF and is written in Python. Redfoot's
 vision has much in common with that of the Semantic Web. Eventually 
 there will be a P2P network of Redfeet ;)
 
-Redfoot utilizes RDFLib and is currently being developed by Daniel Krech.
+Redfoot utilizes RDFLib and is currently being developed by Daniel
+Krech.
+
+%description -l pl
+Redfoot to program do zarz±dzania i dzielenia informacji. Jest
+aktualnie dostosowany g³ównie pod k±tem programistów, ale zmienia
+kierunek na u¿ytkownika koñcowego.
+
+Redfoot intensywnie u¿ywa RDF i jest napisany w Pythonie. Wizja
+Redfoota ma wiele wspólnego z wizj± Semantic Web. Byæ mo¿e bêdzie sieæ
+P2P Redfootów ;)
+
+Redfoot wykorzystuje RDFLib i jest aktualnie rozwijany przez Daniela
+Krecha.
 
 %prep
 %setup -q
@@ -41,8 +49,10 @@ env CFLAGS="%{rpmcflags}" python setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-python -- setup.py install --root=$RPM_BUILD_ROOT --optimize=2
 
+python -- setup.py install \
+	--root=$RPM_BUILD_ROOT \
+	--optimize=2
 
 %clean
 rm -rf $RPM_BUILD_ROOT
