@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.python
 Summary:	Redfoot - a program for managing and sharing information
 Summary(pl):	Redfoot - program do zarz±dzania i dzielenia informacji
 Name:		redfoot
