@@ -21,7 +21,7 @@ BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	python-rdflib = 1.2.4
-
+Requires:	python-medusa
 %description
 edfoot is a program for managing and sharing information. Redfoot 
 is currently geared mostly to the developer, but is shifting in 
