@@ -1,5 +1,5 @@
 Summary:	Redfoot - a program for managing and sharing information
-Summary(pl.UTF-8):   Redfoot - program do zarządzania i dzielenia informacji
+Summary(pl.UTF-8):	Redfoot - program do zarządzania i dzielenia informacji
 Name:		redfoot
 Version:	1.8.0
 Release:	1
