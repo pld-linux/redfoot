@@ -1,5 +1,5 @@
 Summary:	Redfoot - a program for managing and sharing information
-Summary(pl):	Redfoot - program do zarz±dzania i dzielenia informacji
+Summary(pl.UTF-8):   Redfoot - program do zarzÄ…dzania i dzielenia informacji
 Name:		redfoot
 Version:	1.8.0
 Release:	1
@@ -27,14 +27,14 @@ there will be a P2P network of Redfeet ;)
 Redfoot utilizes RDFLib and is currently being developed by Daniel
 Krech.
 
-%description -l pl
-Redfoot to program do zarz±dzania i dzielenia informacji. Jest
-aktualnie dostosowany g³ównie pod k±tem programistów, ale zmienia
-kierunek na u¿ytkownika koñcowego.
+%description -l pl.UTF-8
+Redfoot to program do zarzÄ…dzania i dzielenia informacji. Jest
+aktualnie dostosowany gÅ‚Ã³wnie pod kÄ…tem programistÃ³w, ale zmienia
+kierunek na uÅ¼ytkownika koÅ„cowego.
 
-Redfoot intensywnie u¿ywa RDF i jest napisany w Pythonie. Wizja
-Redfoota ma wiele wspólnego z wizj± Semantic Web. Byæ mo¿e bêdzie sieæ
-P2P Redfootów ;)
+Redfoot intensywnie uÅ¼ywa RDF i jest napisany w Pythonie. Wizja
+Redfoota ma wiele wspÃ³lnego z wizjÄ… Semantic Web. ByÄ‡ moÅ¼e bÄ™dzie sieÄ‡
+P2P RedfootÃ³w ;)
 
 Redfoot wykorzystuje RDFLib i jest aktualnie rozwijany przez Daniela
 Krecha.
